@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>版本信息</title>
+<link href="qrc:/css/version.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false" onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false">
+<!-- 版本信息开始 -->
+<div class="main">
+  <div class="content">
+	<div class="mainContent" >
+		<div class="logo"><img src="qrc:/image/logo.png" class="logoimg" border="0" width="108" height="108"/></div>
+		<div class="showdata">
+			<div class="button">
+				<img src="qrc:/image/close.png" id="closeimg" onMouseOver="mmover();" onMouseDown="mmdown();" onMouseUp="mmover();" onMouseOut="mmout();" onClick="closeWindow();" border="0" width="29" height="29"/>
+			</div>
+                        <p class="product">产品：中存数据存储备份平台</p>
+<!--                        <p class="product">产品：中存电子文档安全管理系统 V2.0</p> -->
+                        <p class="version">版本：<span id="version">ver 2.0</span></p>
+		</div>
+	</div>
+	<div class="footer">
+		<p class="copyright">
+			<small>Copyright&copy; 2013-2018 中存软件（北京）有限公司. All Rights Reserved</small>
+		</p>
+	</div>
+  </div>
+</div>
+<script type="text/javascript">
+	function mmover(){
+		document.getElementById('closeimg').src = 'qrc:/image/5ovr.png';
+	}
+	
+	function mmdown(){
+		document.getElementById('closeimg').src = 'qrc:/image/5clk.png';
+	}
+	
+	function mmout(){
+		document.getElementById('closeimg').src = 'qrc:/image/close.png';
+	}
+
+	function setVersion(version){
+		document.getElementById("version").innerText = version;
+	}
+	
+	function closeWindow(){
+                external.CloseWindow(1);
+	}
+</script>
+<!-- 版本信息结束 -->
+</body>
+</html>

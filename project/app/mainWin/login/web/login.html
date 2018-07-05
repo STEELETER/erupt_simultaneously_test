@@ -1,0 +1,81 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/login.css" rel="stylesheet">
+</head>
+
+<body onkeydown="enterkey()" oncontextmenu="return false" ondragstart="return false" onselectstart="return false" onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false">
+	<div class="main">
+        <table width="100%" height="100%">
+            <!-- <tr onmousedown="myMouseDown(event)" onmousemove="myMouseMove(event)">
+                <td class="a1"></td>
+                <td class="a2"></td>
+                <td class="a3"><span class="img1" onclick="showMin()"></span><span class="img3" onclick="closeWin()"></span><span class="img4"></span></td>
+            </tr> -->
+           <tr style="position: relative;">
+                <td class="b1"><img src="image/per.png"></td>
+                <td class="b2" colspan="2">
+                	<div class="row pull-left" id="loginform1" style="display:block;">
+                		<span style="margin-left:20px;font-size:12px;color:#268EB1;font-family:lantingcu;">PIN:</span>
+                		<input id="textvalue" type="password" class="smb2input" style="outline: none;"/>
+                	</div>
+                	<div class="row pull-left" id="loginform2" style="display:none;">
+                		<span class="use" style="font-size:12px;top:27px;">用户名:</span>
+                		<input id="name" class="xsb2input" style="top:27px;outline: none;"/><br/>
+                		<span class="use" style="font-size:12px;top:57px;">密&nbsp;&nbsp;&nbsp;码:</span>
+                		<input id="pass" type="password" class="xsb2input" style="top:57px;outline: none;"/>
+                		<input id="hidearea" type="text" style="border:0px;background:none;width:1px;height:1px;" maxlength="0">
+                	</div>
+                	<div class="row pull-left" id="loginform3" style="display:none;width: 105px;padding-left: 15px;">
+                		<div id="logintext" class="logintext">
+					        <div id="textvaluehide" class="logintextvalue">
+					            &nbsp;&nbsp;&nbsp;&nbsp;登陆中...
+					        </div>
+					    </div>
+						<!--<input id="textvaluehide" class="b2inputhid" value="&nbsp;&nbsp;&nbsp;&nbsp;登陆中..."/>-->
+                	</div>
+                    <img id="btnimg" class="pull-right" width="52" height="52" style="margin-top:0px;" src="image/login/loginstd.png">
+                    <img id="btn2img" class="pull-right" width="52" height="52" style="margin-top:0px;display:none;" src="image/login/stopstd.png">
+                    <img id="btn3img" class="pull-right" width="52" height="52" style="margin-top:0px;display:none;" src="image/login/backstd.png">
+					<input id="hidearea" type="hidden" />
+                </td>
+            </tr>
+            <tr>
+                <td class="c1"></td>
+                <td class="c2"></td>
+                <td class="c3" style="padding-top:60px;padding-left:5px;">
+                	<div class="chooseBox" style="padding:1px;">
+                		<div class="sign"></div>
+                	</div>
+                	<label class="chooseInfo">用户名登陆</label>
+                </td>
+            </tr>
+            <div class="setList">
+            	<label style="font-size:20px;font-family:lanting;">登录参数设置</label>
+            	<div class="row" style="padding-bottom:20px;padding-top:20px;">
+            		<label class="pull-left" style="margin-left:20px;">服务器地址：</label>
+            		<input id="ipaddr" class="setinput" style="top:58px;width:140px;">
+            		<span class="glyphicon icon" style="left:265px;top:75px;"></span>
+            	</div>
+            	<div class="row" style="padding-bottom:20px;">
+            		<label class="pull-left" style="margin-left:20px;">端口：</label>
+            		<input id="port" class="setinput" style="top:101px;width:62px;">
+            		<span class="glyphicon icon" style="left:185px;top:118px"></span>
+            	</div>	
+            	<div class="row" style="height:60px;padding:6px;background-color:#eeeeee;">
+            		<span class="pull-left img5" style="margin-left:65px;"></span>
+            		<span class="pull-right img6" style="margin-right:65px;"></span>
+            	</div>
+            </div>
+        </table>
+	</div>
+	<!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/md5.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

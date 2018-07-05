@@ -1,0 +1,27 @@
+/**********Title**********/
+QTitleLabel{
+        background-color:#19477f;
+        color: rgba(214, 247, 255, 200);
+}
+
+/**********Button**********/
+QTitleButton{
+        background-color: rgba(255, 255, 255, 0);
+        color: rgba(255, 255, 255, 150);
+        border: 0px;
+        font: 100 10pt;
+}
+QTitleButton#MinMaxButton:hover{
+        background-color: rgba(255, 255, 255, 50);
+        color: white;
+        border: 0px;
+        font: 100 10pt;
+}
+QTitleButton#CloseButton:hover{
+        background-color: #D32424;
+        color: white;
+        border: 0px;
+        font: 100 10pt;
+}
+
+

@@ -1,0 +1,17 @@
+<!--<!DOCTYPE RCC>-->
+<!--<RCC version="1.0">-->
+<!--&lt;!&ndash;<qresource prefix="/imagers">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;&lt;!&ndash;<file>icons/add.png</file>&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;<file alias="images.html">images.html</file>&ndash;&gt;-->
+    <!--&lt;!&ndash;<file alias="title01.png">imagers/title01.png</file>&ndash;&gt;-->
+    <!--&lt;!&ndash;<file alias="155.jpg">imagers/155.jpg</file>&ndash;&gt;-->
+    <!--&lt;!&ndash;<file alias="logo.ico">imagers/logo.ico</file>&ndash;&gt;-->
+<!--&lt;!&ndash;</qresource>&ndash;&gt;-->
+
+<!--<qresource prefix="web">-->
+    <!--&lt;!&ndash;<file>icons/add.png</file>&ndash;&gt;-->
+    <!--<file alias="index.html">web/index.html</file>-->
+<!--</qresource>-->
+<!--</RCC>-->
+<!--C:\Users\zhongcun\Desktop\project\tests\title01.png-->

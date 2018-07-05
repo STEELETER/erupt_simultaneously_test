@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <style>
+        *{margin:0;padding:0}
+        html,body{width:100%;height:100%;background:rgb(5,76,98);font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;font-size: 13px}
+        ul{list-style-type:none;}
+
+        #title{height:10%;background: rgb(5,76,98); }
+        #bottom{height: 60px;background: rgb(5,76,98);}
+        #nav{height:30px}
+        #nav .notice{background: #0383aa;width:100%;height:100%;margin:auto;text-align: center;line-height: 30px;color:#1098c2;font-weight: bold;}
+
+        #main{height:70%;background: #0383aa;overflow-y: auto;padding:20px 0px;}
+        .close{height:26px;float:right;color:#fff;font-size: 23px;width:8%;text-align: center;line-height: 1.2;cursor:default}
+        .close:hover{background: red}
+
+        .list{color:#fff;}
+        .list >li{padding:5px;position: relative;border-top:1px solid #0383aa;border-bottom:1px solid #0383aa;cursor:default}
+        .list >li:hover{border-top: 1px solid #8a8888;border-bottom:1px solid #8a8888;box-shadow: 1px 0px 1px #8a8888}
+        .list .notice-item{margin:5px;position: relative;padding-left:10px;}
+
+        .list .new{color:red;font-size: 16px;position: absolute;left: 0px;top: 2px;}
+        .list .from{font-size: 18px;}
+        /* .list .user-name{vertical-align: middle} */
+
+        .list .sub-li{padding:5px 30px;}
+
+        .list .handle{float:right;}
+        .list .handle div{display: inline-block;cursor:pointer}
+        .list .handle div.see:hover{color:blue;}
+        .list .handle div.ignore:hover{color:red;}
+
+        ::-webkit-scrollbar{
+            width: 6px;
+            /*background-color: #2c3e50;*/
+        }
+
+        ::-webkit-scrollbar-track{
+            /*background: #f5f5f5;*/
+            border-left:1px solid #d0c9c9
+        }
+        ::-webkit-scrollbar-thumb{
+            background:#2c3e50;
+            /*background:rgb(0,112,140)*/
+
+        }
+    </style>
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script>
+        list = []
+        function pyNoticeAdd(item) {
+            list.push(item)
+            alert(list)
+        }
+    </script>
+
+
+</head>
+<body>
+    <div id="title"><span onclick="pyNotice.close()" class="close">×</span></div>
+    <div id="nav">
+        <div class="notice"><i class="fa fa-bell"></i> 消 息 中 心</div>
+    </div>
+    <div id="main">
+        <ul class="list">
+            <li v-for="(item,index) in notices" @click="hasRead(item)">
+                 <div class="notice-item">
+                     <div class="notice-title">
+                         <i v-if="item.isNew" class="new">▪</i>                       
+                         来自 <span class="from"> <i class="fa fa-user"></i> <span class="user-name">{{item.user}}</span></span>
+                    </div>
+                    <ul class="file-list">
+                        <li class="sub-li" v-for="file in item.files">
+                            {{file.fname}}
+                        </li>
+                    </ul>
+                 </div>
+            </li>
+        </ul>
+
+
+
+    </div>
+    <div id="bottom"></div>
+    <script>
+        app = new Vue({
+            el:"#main",
+            data:{
+                notices:[{user:'马世强',isNew:true,files:[{fname:"工作计划.docx"}]},{user:'李振飞',isNew:true,files:[{fname:"年度总结.ppt"}]}]
+            },
+            methods:{
+                delItem:function(index){
+                    this.notices.splice(index,1)
+                },
+                hasRead:function(item){
+                    item.isNew = false
+                }
+            }
+
+        })
+
+    </script>
+</body>
+</html>

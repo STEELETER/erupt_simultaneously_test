@@ -1,0 +1,13 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource prefix="imagers">
+    <file alias="155.png">imagers/155.jpg</file>
+</qresource>
+
+
+<!--<qresource >-->
+    <!--<file alias="images.html">images.html</file>-->
+<!--</qresource>-->
+
+
+</RCC>

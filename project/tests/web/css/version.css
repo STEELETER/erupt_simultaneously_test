@@ -1,0 +1,11 @@
+
+body{overflow: hidden; margin:0 0 0 0;font-family:"宋体"}
+.main{width:480px; height:270px;border:1px solid #0ca7d3;}
+.content{padding:8px; }
+.mainContent{background-color:#3a647c;height:166px;}
+.mainContent .logo{width: 163px; float:left;}
+.mainContent .logoimg{padding-left:40px; padding-top:36px;}
+.mainContent .showdata{width: 290px;font-size:13px; float: right;color:#fff;}
+.mainContent .showdata .button{float: right;}
+.mainContent .product{margin-top:36px;}
+.footer{font-size:15px;text-align:center; margin-top:64px;}

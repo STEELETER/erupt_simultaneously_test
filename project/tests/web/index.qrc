@@ -1,0 +1,14 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource prefix="image">
+    <file alias="index.html">image/index.html</file>
+    <file alias="5clk.png">image/5clk.png</file>
+    <file alias="5ovr.png">image/5ovr.png</file>
+    <file alias="bg.png">image/bg.png</file>
+    <file alias="close.png">image/close.png</file>
+    <file alias="logo.png">image/logo.png</file>
+</qresource>
+<qresource prefix="css">
+    <file alias="version.css">css/version.css</file>
+</qresource>
+</RCC>

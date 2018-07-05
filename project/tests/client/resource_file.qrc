@@ -1,0 +1,29 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource prefix="img">
+    <file alias="infobg.png">img/infobg.png</file>
+    <file alias="title.png">img/title.png</file>
+</qresource>
+<qresource prefix="shadow">
+    <file alias="shadow_bottom.png">shadow/shadow_bottom.png</file>
+    <file alias="shadow_bottom_m.png">shadow/shadow_bottom_m.png</file>
+    <file alias="shadow_left.png">shadow/shadow_left.png</file>
+    <file alias="shadow_left_bottom.png">shadow/shadow_left_bottom.png</file>
+    <file alias="shadow_left_bottom_m.png">shadow/shadow_left_bottom_m.png</file>
+    <file alias="shadow_left_m.png">shadow/shadow_left_m.png</file>
+    <file alias="shadow_left_top.png">shadow/shadow_left_top.png</file>
+    <file alias="shadow_left_top_m.png">shadow/shadow_left_top_m.png</file>
+    <file alias="shadow_right.png">shadow/shadow_right.png</file>
+    <file alias="shadow_right_bottom.png">shadow/shadow_right_bottom.png</file>
+    <file alias="shadow_right_bottom_m.png">shadow/shadow_right_bottom_m.png</file>
+    <file alias="shadow_right_m.png">shadow/shadow_right_m.png</file>
+    <file alias="shadow_right_top.png">shadow/shadow_right_top.png</file>
+    <file alias="shadow_right_top_m.png">shadow/shadow_right_top_m.png</file>
+    <file alias="shadow_top.png">shadow/shadow_top.png</file>
+    <file alias="shadow_top_m.png">shadow/shadow_top_m.png</file>
+</qresource>
+<qresource >
+    <file alias="EDM.qss">EDM.qss</file>
+    <file alias="EDM.ico">EDM.ico</file>
+</qresource>
+</RCC>
